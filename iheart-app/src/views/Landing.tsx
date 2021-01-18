@@ -10,7 +10,7 @@ const Landing: React.FC = () => {
       <div className='container'>
         <h1 className='text-center'>Looking for music?</h1>
         <button className='btn btn-primary ml-auto mr-auto'>
-          <Link to='/table'>Eplore Songs</Link>
+          <Link to='/table'>Explore Songs</Link>
         </button>
       </div>
       <Footer />
