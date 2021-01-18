@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <footer style={footer}>
+    <footer className='container footer'>
       <div>
         © {new Date().getFullYear()}{' '}
         <a href='https://github.com/ali-ajam' target='_blank'>
@@ -11,11 +11,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-const footer = {
-  background: 'white',
-  padding: '30px 0',
 };
 
 export default Footer;

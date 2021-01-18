@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // react library for routing
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import './assets/scss/styles.scss';
 
 import Landing from './views/Landing';
 import Table from './views/Table';
