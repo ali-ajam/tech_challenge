@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "iheart-graphql"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-mz3s33xfot77"
+s3_prefix = "iheart-graphql"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
