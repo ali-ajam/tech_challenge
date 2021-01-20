@@ -9,32 +9,20 @@ Globals:
   Function:
     Timeout: 3
 Resources:
-  HelloWorldFunction:
+  GraphQL:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: HelloWorldFunction
-      Handler: app.lambdaHandler
+      CodeUri: GraphQL
+      Handler: graphql.graphqlHandler
       Runtime: nodejs12.x
       Events:
-        HelloWorld:
+        GetRequest:
           Type: Api
           Properties:
-            Path: /hello
+            Path: /graphql
             Method: get
-Outputs:
-  HelloWorldApi:
-    Description: API Gateway endpoint URL for Prod stage for Hello World function
-    Value:
-      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
-  HelloWorldFunction:
-    Description: Hello World Lambda Function ARN
-    Value:
-      Fn::GetAtt:
-      - HelloWorldFunction
-      - Arn
-  HelloWorldFunctionIamRole:
-    Description: Implicit IAM Role created for Hello World function
-    Value:
-      Fn::GetAtt:
-      - HelloWorldFunctionRole
-      - Arn
+        PostRequest:
+          Type: Api
+          Properties:
+            Path: /graphql
+            Method: post

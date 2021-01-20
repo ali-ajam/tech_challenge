@@ -7,14 +7,17 @@
   "author": "SAM CLI",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.1"
+    "apollo-server-lambda": "^2.19.2",
+    "aws-sdk": "^2.829.0",
+    "axios": "^0.21.1",
+    "graphql": "^15.4.0"
   },
   "scripts": {
     "test": "mocha tests/unit/",
     "integ-test": "mocha tests/integration/"
   },
   "devDependencies": {
-    "aws-sdk": "^2.815.0",
+    "aws-sdk": "^2.829.0",
     "chai": "^4.2.0",
     "mocha": "^8.2.1"
   }
